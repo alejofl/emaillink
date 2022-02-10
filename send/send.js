@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (body == null) {
             body = '';
         }
-        mailto = `mailto:${to}?subject=${subject}&body=${body.replace(new RegExp(/(%0A)|(\\n)/, 'g'), '%0D%0A')}`;
+        mailto = `mailto:${to}?subject=${subject}&body=${body.replace(new RegExp(/(%0A)|(\n)/, 'g'), '%0D%0A')}`;
         window.location.href = mailto;
     }
 });
