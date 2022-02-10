@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             body = document.querySelector('#body').value;
             resultBox = document.querySelector('#result');
 
-            string = `alejofl.github.io/emaillink/send/send.html?to=${encodeURIComponent(to)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+            string = `https://alejofl.github.io/emaillink/send/send.html?to=${encodeURIComponent(to)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 
             resultBox.value = "Loading...";
             resultBox.value = string;
